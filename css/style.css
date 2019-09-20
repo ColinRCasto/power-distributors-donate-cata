@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'montserratbold';
+  src: url('fonts/montserrat-bold-webfont.woff2') format('woff2'),
+       url('fonts/montserrat-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url('fonts/montserrat-regular-webfont.woff2') format('woff2'),
+       url('fonts/montserrat-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+
+
+.donation-form{
+  background: #ffffff;
+  width: 100%;
+  
+}
+
+.form-body{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 0.05rem solid #e3e3e3;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.make-donation{
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.container{
+  position: absolute;
+  width: 35rem;
+  height: 60vh;
+  left: 50vw;
+  top: 50vh;
+  margin-left: -17.5rem;
+  margin-top: -30vh;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 40rem;
+  height: 60vh;
+}
+
+.progress {
+  width: 100%;
+  height: 30px;
+  background: #d9d9d9;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: #ea7423;
+  transition: width 0.7s;
+}
+
+.hover-text {
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: absolute;
+  width: 100%;
+  height: 5rem;
+  color: #fff;
+  background: #093254;
+  top: 2.5rem;
+  border-radius: 1rem;
+  pointer-events: none;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 5rem;
+  font-family: 'montserratregular';
+}
+
+.tail {
+  width: 0;
+  height: 0;
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-top: 2rem solid #093254;
+  position: absolute;
+  top: 4.7rem;
+  left: 50%;
+  margin-left: -2rem;
+}
+
+.form-header:hover .hover-text {
+  opacity: 1;
+}
+
+.description, .days-remaining{
+  font-size: 1.5rem;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  color: #808080;
+  font-family: 'montserratregular';
+  text-align: 'center';
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.days-remaining{
+  margin-top: 1rem;
+}
+
+.important {
+  color: #ed7222;
+}
+
+.donate-button{
+  background-color: #8cbe0f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'montserratbold';
+  border-radius: 0.5rem;
+}
+
+.dollar-sign{
+  font-size: 3.5rem;
+}
+.donation-amount-input{
+  width: 6rem;
+  text-align: center;
+  margin-right: 4rem;
+  font-size: 3.5rem;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  font-family: 'montserratregular';
+}
+
+.additional-buttons{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.dollar-sign{
+  font-family: 'montserratregular'
+}
+
+.share-button{
+  background-color: #e4e4e4;
+  border: none;
+  color: #838383;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'montserratbold';
+  border-radius: 0.5rem;
+  border: 1px solid #d0d0d0;
+}
+
+.why-donate{
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-family: 'montserratbold';
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'montserratbold';
+  color: #0b304d;
+}
